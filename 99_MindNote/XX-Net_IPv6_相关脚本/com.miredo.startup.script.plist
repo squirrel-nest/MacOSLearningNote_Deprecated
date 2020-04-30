@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.miredo.startup.script.plist</string>
+    <key>LaunchOnlyOnce</key>
+    <true/>
+    <key>ProgramArguments</key>
+    <array>
+        <!--<string>sh</string>-->
+	<!-- <string>-c</string>-->
+	<string>/usr/local/bin/testautostartupmiredo.sh</string>
+        <string>startup</string>
+	<string>157.56.149.60</string>
+	<string>restart</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>StandardOutPath</key>
+        <string>/var/log/MiredoLoadLog.log</string>
+    <key>StandardErrorPath</key>
+        <string>/var/log/MiredoErrLoadLog.log</string>
+    <key>Debug</key>
+    <true/>
+</dict>
+</plist>

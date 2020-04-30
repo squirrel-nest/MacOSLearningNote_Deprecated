@@ -1,0 +1,58 @@
+useradd -g ftp -s /sbin/nologin ftptest
+passwd ftptest
+
+service vsftpd status
+
+
+打开端口21
+/sbin/iptables -I INPUT -p tcp --dport 21 -j ACCEPT
+/etc/rc.d/init.d/iptables save
+service iptables {start|stop|restart}
+
+#sestatus
+# getenforce
+
+如果 enable 则
+-- disabled it
+setenforce 0
+
+
+getsebool -a
+getsebool -a |grep ftp
+
+setsebool -P ftp_home_dir on
+
+
+安全考虑，不用：
+setsebool -P allow_ftpd_full_access on     < - equal - > 1
+
+附：
+[root@umboyserver vsftpd]# setsebool allow_ftpd_full_access  1
+[root@umboyserver vsftpd]# setsebool allow_ftpd_use_cifs 1
+[root@umboyserver vsftpd]# setsebool allow_ftpd_use_nfs 1
+[root@umboyserver vsftpd]# setsebool ftp_home_dir  1
+[root@umboyserver vsftpd]# setsebool httpd_enable_ftp_server 1
+[root@umboyserver vsftpd]# setsebool tftp_anon_write 1
+[root@umboyserver vsftpd]# service vsftpd restart
+Shutting down vsftpd:                                      [  OK  ]
+Starting vsftpd for vsftpd:                                [  OK  ]
+[root@umboyserver vsftpd]# getsebool -a|grep ftp
+allow_ftpd_anon_write --> off
+allow_ftpd_full_access --> on
+allow_ftpd_use_cifs --> on
+allow_ftpd_use_nfs --> on
+ftp_home_dir --> on
+httpd_enable_ftp_server --> on
+tftp_anon_write --> on
+
+
+mkdir /upload
+chown ftptest:ftp /upload
+
+
+
+
+
+
+
+
