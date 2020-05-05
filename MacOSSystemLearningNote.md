@@ -29,5 +29,9 @@
    ```vim
    1. vim ~/.bashrc
    # 若无，则新建
+   2. alias name='command line'
+   # 格式
+   3. source ~/.bashrc
+   # 保存退出后使之生效
    ```
    
