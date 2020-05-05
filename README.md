@@ -29,3 +29,4 @@
                   source .bash_profile
               ```
          5. 关闭当前Terminal，重启一个新的Terminal使配置生效。
+            - ![Terminal_Bash](https://blog.csdn.net/u010391437/article/details/75126310)<br>
