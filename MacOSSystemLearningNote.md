@@ -36,9 +36,10 @@
    ```
 ## 当设置完 ~/.bash_profile 重新打开终端需要重新source的解决办法
    * 发现zsh加载的是 ~/.zshrc文件
-   * 在 ~/.zshrc 增加需要生效的文件
    ```vim
+   # 在 ~/.zshrc 增加需要生效的文件
    source ~/.bash_profile
    source ~/.bashrc
+   # 若无，则新建
    ```
    
