@@ -1,7 +1,0 @@
-mv /Library/LaunchDaemons/miredo.plist /Users/jennywang/Documents/Notes/InstallAndConf/Apple/MacOS/XX_Net安装/
-
-touch /Users/jennywang/Documents/Notes/InstallAndConf/Apple/MacOS/XX_Net安装/miredo_plist_说明.txt
-
-chown jennywang /Users/jennywang/Documents/Notes/InstallAndConf/Apple/MacOS/XX_Net安装/miredo_plist_说明.txt
-
-/Library/LaunchDaemons/miredo.plist 这个文件不知是哪个方式创建的，重新安装前，先移走。

@@ -1,1 +1,0 @@
-startprocess_good.sh 原先放在/usr/local/bin目录下执行。

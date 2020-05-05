@@ -1,5 +1,0 @@
-40.119.212.192 ['win1711.ipv6.microsoft.com'] 218ms
-195.140.195.140 ['teredo.trex.fi'] 369ms
-83.170.6.76 ['teredo.remlab.net', 'teredo-debian.remlab.net'] 372ms
-157.56.106.189 ['win10.ipv6.microsoft.com', 'win1710.ipv6.microsoft.com'] 382ms
-217.17.192.217 ['teredo.iks-jena.de'] 401ms
