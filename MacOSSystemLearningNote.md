@@ -34,4 +34,11 @@
    3. source ~/.bashrc
    # 保存退出后使之生效
    ```
+## 当设置完 ~/.bash_profile 重新打开终端需要重新source的解决办法
+   * 发现zsh加载的是 ~/.zshrc文件
+   * 在 ~/.zshrc 增加需要生效的文件
+   ```vim
+   source ~/.bash_profile
+   source ~/.bashrc
+   ```
    
