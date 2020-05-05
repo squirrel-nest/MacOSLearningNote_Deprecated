@@ -25,3 +25,9 @@
          csrutil disable
       ```
       ⚠️ Rootless机制将成为对抗恶意程序的最后防线，记得要再开起来。
+## MacOS 15.4 以上版本的alias设置
+   ```vim
+   1. vim ~/.bashrc
+   # 若无，则新建
+   ```
+   
